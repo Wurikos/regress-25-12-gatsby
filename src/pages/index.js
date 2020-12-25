@@ -2,7 +2,7 @@ import React from "react";
 import theme from "theme";
 import { Theme, Link, Text, Box, Icon } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
-import { Override, StackItem, Stack, Section } from "@quarkly/components";
+import { Override, StackItem, Stack, Section, Menu } from "@quarkly/components";
 import { MdHelp } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
@@ -47,6 +47,7 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Section padding="140px 0" sm-padding="40px 0" background="url(https://images.unsplash.com/photo-1515600051222-a3c338ff16f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) center/cover">
+			<Menu />
 			<StackItem width="50%" lg-width="100%">
 				<Override
 					slot="StackItemContent"
